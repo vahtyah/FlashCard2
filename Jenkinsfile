@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'docker:dind' }
+    }
 
     environment {
         DOCKER_IMAGE = "vahtyah/flashapp"
@@ -13,6 +15,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'docker version'
                 sh 'docker build -t $DOCKER_IMAGE:$DOCKER_TAG .'
             }
         }
