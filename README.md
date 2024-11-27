@@ -49,7 +49,7 @@ mindmap
       Оптимизация
       Балансировка нагрузки
 
-
+```mermaid
 gitGraph
    commit id: "Начало проекта"
    branch feature-requests
