@@ -48,6 +48,7 @@ mindmap
         Аутентификация
       Оптимизация
       Балансировка нагрузки
+```
 
 ```mermaid
 gitGraph
@@ -77,3 +78,4 @@ gitGraph
    merge feature-printing id: "Слияние печати в main"
    
    commit id: "Финализация системы"
+```
